@@ -71,3 +71,4 @@ static/processed/*.mkv
 
 # Test outputs
 test_*.mp4
+.vercel

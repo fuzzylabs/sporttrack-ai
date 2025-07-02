@@ -2,7 +2,7 @@
 
 > **AI-Powered Sports Technique Analysis with Real-Time Pose Detection**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/sporttrack-ai)
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://python.org)
 
 SportTrack.ai is a cutting-edge web application that analyzes sports performance videos using advanced AI pose detection. Upload a video of athletic performance and receive instant feedback with skeletal overlay visualization and technique analysis.
 
@@ -29,16 +29,26 @@ SportTrack.ai is a cutting-edge web application that analyzes sports performance
 
 ## 🚀 Quick Start
 
-### One-Click Deployment
-Deploy to Vercel with a single click:
+### Quick Start Script
+The fastest way to get started:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/sporttrack-ai)
+```bash
+# Clone the repository
+git clone https://github.com/fuzzylabs/sporttrack-ai.git
+cd sporttrack-ai
 
-### Local Development
+# Run the quick start script
+chmod +x start.sh
+./start.sh
+```
+
+Open your browser to `http://localhost:5000`
+
+### Manual Setup
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/sporttrack-ai.git
+   git clone https://github.com/fuzzylabs/sporttrack-ai.git
    cd sporttrack-ai
    ```
 
@@ -119,7 +129,7 @@ The application includes an advanced parameter tuning interface with user-friend
 - **Responsive Design** with mobile-first approach
 
 ### Deployment
-- **Vercel** serverless functions
+- **Flask** web server for local/server deployment
 - **H.264** video encoding for browser compatibility
 - **Progressive Enhancement** for accessibility
 
@@ -141,7 +151,6 @@ sporttrack-ai/
 │   └── static/processed/         # Processed video output
 ├── 🚀 Deployment
 │   ├── start.sh                  # Quick startup script
-│   ├── vercel.json              # Vercel configuration
 │   └── .gitignore               # Git ignore rules
 └── 📚 Documentation
     ├── README.md                # This file
@@ -196,7 +205,7 @@ This project is proprietary software developed for SportTrack.ai. All rights res
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-username/sporttrack-ai/issues)
+- **Issues**: [GitHub Issues](https://github.com/fuzzylabs/sporttrack-ai/issues)
 - **Documentation**: [CLAUDE.md](CLAUDE.md)
 - **Website**: [SportTrack.ai](https://sporttrack.ai)
 
@@ -206,7 +215,7 @@ This project is proprietary software developed for SportTrack.ai. All rights res
 
 **SportTrack.ai** - Revolutionising sports technique analysis with AI
 
-[🌐 Website](https://sporttrack.ai) • [📖 Docs](CLAUDE.md) • [🚀 Deploy](https://vercel.com/new/clone?repository-url=https://github.com/your-username/sporttrack-ai)
+[🌐 Website](https://sporttrack.ai) • [📖 Docs](CLAUDE.md) • [🐍 Python](https://python.org)
 
 Made with ❤️ for athletes and coaches worldwide
 

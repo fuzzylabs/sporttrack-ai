@@ -18,7 +18,7 @@ echo "Installing dependencies..."
 pip install -r requirements.txt
 
 # Start the application
-echo "🚀 Launching SportTrack.ai on http://localhost:5000"
+echo "🚀 Launching SportTrack.ai on http://localhost:8000"
 echo "Upload your sports video and get AI-powered pose analysis!"
 echo "Press Ctrl+C to stop the server"
 echo ""

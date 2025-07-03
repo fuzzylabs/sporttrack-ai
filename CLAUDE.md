@@ -93,6 +93,12 @@ FLASK_ENV=production
 MAX_CONTENT_LENGTH=104857600  # 100MB
 ```
 
+### Package Management
+The project supports both traditional pip and modern uv package management:
+- **pyproject.toml**: Modern Python project configuration with uv support
+- **requirements.txt**: Traditional pip-compatible dependency list
+- **uv**: Recommended for faster dependency resolution and installation
+
 ## Testing and Quality Assurance
 
 ### Testing Strategy
@@ -140,10 +146,20 @@ MAX_CONTENT_LENGTH=104857600  # 100MB
 ## Contributing
 
 ### Development Setup
+
+**Using uv (recommended):**
+1. Clone repository
+2. Install uv: `pip install uv`
+3. Create virtual environment and install dependencies: `uv venv && source .venv/bin/activate && uv sync`
+4. Run development server: `python app.py`
+
+**Using pip:**
 1. Clone repository
 2. Create virtual environment: `python -m venv venv`
 3. Install dependencies: `pip install -r requirements.txt`
 4. Run development server: `python app.py`
+
+**Note:** The application now runs on port 8000 by default.
 
 ### Code Standards
 - Follow PEP 8 for Python code

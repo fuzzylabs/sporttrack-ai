@@ -42,7 +42,7 @@ chmod +x start.sh
 ./start.sh
 ```
 
-Open your browser to `http://localhost:5000`
+Open your browser to `http://localhost:8000`
 
 ### Manual Setup
 
@@ -58,10 +58,25 @@ Open your browser to `http://localhost:5000`
    ./start.sh
    ```
 
-3. **Open your browser**: Navigate to `http://localhost:5000`
+3. **Open your browser**: Navigate to `http://localhost:8000`
 
 ### Manual Installation
 
+Using uv (recommended for faster installation):
+```bash
+# Install uv if not already installed
+pip install uv
+
+# Create virtual environment and install dependencies
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+uv sync
+
+# Run application
+python3 app.py
+```
+
+Or using pip:
 ```bash
 # Create virtual environment
 python3 -m venv venv
@@ -140,7 +155,8 @@ sporttrack-ai/
 ├── 🐍 Backend
 │   ├── app.py                    # Flask web application
 │   ├── pose_processor.py         # MediaPipe pose detection engine
-│   └── requirements.txt          # Python dependencies
+│   ├── requirements.txt          # Python dependencies (pip)
+│   └── pyproject.toml           # Project configuration (uv)
 ├── 🎨 Frontend
 │   ├── templates/index.html      # Main web interface
 │   ├── static/css/style.css      # SportTrack.ai styling
@@ -186,7 +202,7 @@ We welcome contributions! Please see our [development documentation](CLAUDE.md) 
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Install dependencies: `pip install -r requirements.txt`
+3. Install dependencies: `uv sync` or `pip install -r requirements.txt`
 4. Make your changes and add tests
 5. Commit: `git commit -m 'Add amazing feature'`
 6. Push: `git push origin feature/amazing-feature`
